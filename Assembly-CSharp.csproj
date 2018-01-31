@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{3485BB8C-B5A9-9CF6-3CEC-01AD411567DC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_2;UNITY_5_6;UNITY_5;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_ANDROID;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;UNITY_HAS_GOOGLEVR</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\NendAd\Scripts\AD\FullBoard\NendAdFullBoard.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\Events\NativeAdViewEvent.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\Events\NativeAdViewFailedToLoadEvent.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\Handlers\ClickHandler.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\Handlers\ClickHandler2D.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\Handlers\ClickHandler3D.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\Handlers\ClickHandlerGO.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\Handlers\ClickHandlerUI.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\Handlers\ImpressionHandler.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\Handlers\ImpressionHandlerGO.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\Handlers\ImpressionHandlerUI.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\INativeAd.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\INativeAdClient.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\NativeAd.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\NativeAdClient.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\NativeAdClientFactory.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\NendAdNative.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\NendAdNativeImage.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\NendAdNativeText.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\NendAdNativeView.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\Utils\NendAdLogger.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\Utils\SimpleTimer.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\Utils\TextureLoader.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Native\Utils\UIRenderer.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\NendAd.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\NendAdBanner.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\NendAdIcon.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\NendAdInterstitial.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Video\ErrorVideoAdCallbackArgments.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Video\NendAdInterstitialVideo.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Video\NendAdRewardedItem.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Video\NendAdRewardedVideo.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Video\NendAdVideo.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Video\RewardedVideoAdCallbackArgments.cs" />
+     <Compile Include="Assets\NendAd\Scripts\AD\Video\VideoAdCallbackArgments.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Common\Gravity.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Common\NendAdErrorEventArgs.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Common\NendAdInterstitialEnumerations.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Common\NendAdLogger.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Common\NendAdMainThreadWorker.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Common\NendErrorCode.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Common\NendUtils.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Common\Orientation.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Layout\NendAdDefaultLayoutBuilder.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Layout\NendAdDefaultLayoutParams.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Layout\NendAdIconLayoutBuilder.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Layout\NendAdIconLayoutParams.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Layout\NendAdLayoutBuilder.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Platform\Android\AndroidBannerInterface.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Platform\Android\AndroidFullBoardAd.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Platform\Android\AndroidIconInterface.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Platform\Android\AndroidInterstitialInterface.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Platform\Android\AndroidInterstitialVideoAd.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Platform\Android\AndroidNativeAd.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Platform\Android\AndroidNativeAdClient.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Platform\Android\AndroidRewardedVideoAd.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Platform\Android\listener\AndroidVideoAdListener.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Platform\Android\utilities\CommonUtils.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Platform\Android\utilities\VideoMethodUtils.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Platform\NendAdBannerInterface.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Platform\NendAdIconInterface.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Platform\NendAdInterstitialInterface.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Platform\NendAdNativeInterfaceFactory.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Platform\iOS\IOSBannerInterface.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Platform\iOS\IOSFullBoardAd.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Platform\iOS\IOSInterstitialInterface.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Platform\iOS\IOSInterstitialVideoAd.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Platform\iOS\IOSNativeAd.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Platform\iOS\IOSNativeAdClient.cs" />
+     <Compile Include="Assets\NendAd\Scripts\Platform\iOS\IOSRewardedVideoAd.cs" />
+     <Compile Include="Assets\Testscript\EnemyFireMissile.cs" />
+     <Compile Include="Assets\Testscript\EnemyFireMissileB.cs" />
+     <Compile Include="Assets\Testscript\LookAt.cs" />
+     <Compile Include="Assets\Testscript\Nway.cs" />
+     <Compile Include="Assets\Testscript\Rotate.cs" />
+     <Compile Include="Assets\script\AdMob.cs" />
+     <Compile Include="Assets\script\Bullet.cs" />
+     <Compile Include="Assets\script\Common.cs" />
+     <Compile Include="Assets\script\DestroyArea.cs" />
+     <Compile Include="Assets\script\Enemy.cs" />
+     <Compile Include="Assets\script\EnemyHealth.cs" />
+     <Compile Include="Assets\script\Exit.cs" />
+     <Compile Include="Assets\script\Explosion.cs" />
+     <Compile Include="Assets\script\Player.cs" />
+     <Compile Include="Assets\script\Transition.cs" />
+     <Compile Include="Assets\script\back.cs" />
+     <Compile Include="Assets\script\ex.cs" />
+     <Compile Include="Assets\script\moveEnemy.cs" />
+     <Compile Include="Assets\script\stage_I.cs" />
+     <Compile Include="Assets\script\stage_II.cs" />
+     <Compile Include="Assets\script\stage_III.cs" />
+     <None Include="Assets\NendAd\Plugins\Android\AndroidManifest.xml" />
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
